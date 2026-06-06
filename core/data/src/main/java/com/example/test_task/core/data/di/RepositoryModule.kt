@@ -1,6 +1,6 @@
-package com.example.test_task.di
+package com.example.test_task.core.data.di
 
-import com.example.test_task.data.repository.CoursesRepositoryImpl
+import com.example.test_task.core.data.repository.CoursesRepositoryImpl
 import com.example.test_task.domain.repository.CoursesRepository
 import dagger.Binds
 import dagger.Module

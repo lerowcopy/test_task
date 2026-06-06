@@ -21,6 +21,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
@@ -107,10 +108,11 @@ private fun BottomBarItem(
 }
 
 private val MainTab.title: String
+    @Composable
     get() = when (this) {
-        MainTab.HOME -> "Главная"
-        MainTab.FAVORITES -> "Избранное"
-        MainTab.ACCOUNT -> "Аккаунт"
+        MainTab.HOME -> stringResource(R.string.main_tab_home)
+        MainTab.FAVORITES -> stringResource(R.string.main_tab_favorites)
+        MainTab.ACCOUNT -> stringResource(R.string.main_tab_account)
     }
 
 private val MainTab.iconRes: Int

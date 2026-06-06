@@ -7,6 +7,6 @@ data class MainUiState(
     val originalCourses:        List<Course> = emptyList(),
     val favoriteCourses:        List<Course> = emptyList(),
     val isLoading:              Boolean = false,
-    val errorMessage:           String? = null,
+    val errorMessage:           Int? = null,
     val isSortedByPublishDate:  Boolean = false
 )

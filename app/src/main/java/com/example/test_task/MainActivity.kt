@@ -6,7 +6,7 @@ import androidx.activity.SystemBarStyle
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.example.test_task.presentation.navigation.AppNavGraph
-import com.example.test_task.ui.theme.Test_taskTheme
+import com.example.test_task.core.ui.theme.Test_taskTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

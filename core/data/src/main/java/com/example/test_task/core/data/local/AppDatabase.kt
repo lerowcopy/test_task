@@ -1,4 +1,4 @@
-package com.example.test_task.data.local
+package com.example.test_task.core.data.local
 
 import androidx.room.Database
 import androidx.room.RoomDatabase

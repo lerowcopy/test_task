@@ -8,9 +8,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.example.test_task.feature.auth.presentation.AuthorizationScreen
+import com.example.test_task.feature.main.presentation.MainScreen
 import androidx.navigation.compose.rememberNavController
-import com.example.test_task.presentation.authorization.AuthorizationScreen
-import com.example.test_task.presentation.main.MainScreen
 
 @Composable
 fun AppNavGraph() {

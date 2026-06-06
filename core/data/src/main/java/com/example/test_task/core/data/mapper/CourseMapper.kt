@@ -1,7 +1,7 @@
-package com.example.test_task.data.mapper
+package com.example.test_task.core.data.mapper
 
-import com.example.test_task.data.local.FavoriteCourseEntity
-import com.example.test_task.data.remote.CourseDto
+import com.example.test_task.core.data.local.FavoriteCourseEntity
+import com.example.test_task.core.data.remote.CourseDto
 import com.example.test_task.domain.model.Course
 
 fun CourseDto.toDomain(): Course {

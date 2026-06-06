@@ -1,9 +1,9 @@
-package com.example.test_task.data.repository
+package com.example.test_task.core.data.repository
 
-import com.example.test_task.data.local.FavoriteCourseDao
-import com.example.test_task.data.mapper.toDomain
-import com.example.test_task.data.mapper.toFavoriteEntity
-import com.example.test_task.data.remote.CoursesApi
+import com.example.test_task.core.data.local.FavoriteCourseDao
+import com.example.test_task.core.data.mapper.toDomain
+import com.example.test_task.core.data.mapper.toFavoriteEntity
+import com.example.test_task.core.data.remote.CoursesApi
 import com.example.test_task.domain.model.Course
 import com.example.test_task.domain.repository.CoursesRepository
 import kotlinx.coroutines.flow.Flow

@@ -31,6 +31,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.input.KeyboardType
@@ -62,7 +63,7 @@ fun AuthorizationScreen(
             .padding(horizontal = 16.dp)
     ) {
         Text(
-            text = "Вход",
+            text = stringResource(R.string.auth_title),
             fontSize = 28.sp,
             letterSpacing = 0.sp,
             lineHeight = 36.sp,
@@ -78,7 +79,7 @@ fun AuthorizationScreen(
             // контейнер для ввода почты
             Column(modifier = Modifier.padding(bottom = 16.dp)) {
                 Text(
-                    text = "Email",
+                    text = stringResource(R.string.auth_email),
                     fontSize = 16.sp,
                     lineHeight = 18.sp,
                     letterSpacing = 0.15.sp,
@@ -90,7 +91,7 @@ fun AuthorizationScreen(
 
                 TextField(
                     value = emailTextField,
-                    label = { Text("example@gmail.com") },
+                    label = { Text(stringResource(R.string.auth_email_hint)) },
                     onValueChange = { newValue ->
                         emailTextField = newValue.replace(Regex("[^A-Za-z0-9@._%+-]"), "")
                     },
@@ -114,7 +115,7 @@ fun AuthorizationScreen(
 
                 if (!isEmailValid) {
                     Text(
-                        text = "Введите корректный email",
+                        text = stringResource(R.string.auth_email_error),
                         color = Color.Red,
                         fontSize = 12.sp,
                         modifier = Modifier.padding(top = 4.dp)
@@ -125,7 +126,7 @@ fun AuthorizationScreen(
             // контейнер для ввода пароля
             Column(modifier = Modifier.padding(bottom = 16.dp)) {
                 Text(
-                    text = "Пароль",
+                    text = stringResource(R.string.auth_password),
                     fontSize = 16.sp,
                     lineHeight = 18.sp,
                     letterSpacing = 0.15.sp,
@@ -137,7 +138,7 @@ fun AuthorizationScreen(
 
                 TextField(
                     value = passwordTextField,
-                    label = { Text("Введите пароль") },
+                    label = { Text(stringResource(R.string.auth_password_hint)) },
                     onValueChange = { passwordTextField = it },
                     modifier = Modifier.fillMaxWidth(),
                     shape = RoundedCornerShape(30.dp),
@@ -177,7 +178,7 @@ fun AuthorizationScreen(
                 .fillMaxWidth()
                 .height(40.dp)
         ) {
-            Text("Вход")
+            Text(stringResource(R.string.auth_title))
         }
 
         // контейнер для Регистрации и забыл пароль
@@ -188,7 +189,7 @@ fun AuthorizationScreen(
         ) {
             Row() {
                 Text(
-                    text = "Нету аккаунта?",
+                    text = stringResource(R.string.auth_no_account),
                     fontFamily = FontFamily(Font(com.example.test_task.core.ui.R.font.roboto_semibold)),
                     fontSize = 12.sp,
                     lineHeight = 15.sp,
@@ -196,7 +197,7 @@ fun AuthorizationScreen(
                     color = Color.White,
                 )
                 Text(
-                    text = " Регистрация",
+                    text = stringResource(R.string.auth_registration),
                     fontFamily = FontFamily(Font(com.example.test_task.core.ui.R.font.roboto_semibold)),
                     fontSize = 12.sp,
                     lineHeight = 15.sp,
@@ -207,7 +208,7 @@ fun AuthorizationScreen(
             }
             Spacer(modifier = Modifier.height(8.dp))
             Text(
-                text = "Забыл пароль",
+                text = stringResource(R.string.auth_forgot_password),
                 fontFamily = FontFamily(Font(com.example.test_task.core.ui.R.font.roboto_semibold)),
                 fontSize = 12.sp,
                 lineHeight = 15.sp,
@@ -239,7 +240,7 @@ fun AuthorizationScreen(
             ) {
                 Icon(
                     painter = painterResource(id = R.drawable.ic_vk),
-                    contentDescription = "VK",
+                    contentDescription = stringResource(R.string.auth_vk),
                     tint = Color.White,
                     modifier = Modifier
                         .width(50.dp)
@@ -261,7 +262,7 @@ fun AuthorizationScreen(
             ) {
                 Icon(
                     painter = painterResource(id = R.drawable.ic_ok),
-                    contentDescription = "OK",
+                    contentDescription = stringResource(R.string.auth_ok),
                     tint = Color.White,
                     modifier = Modifier
                         .width(50.dp)

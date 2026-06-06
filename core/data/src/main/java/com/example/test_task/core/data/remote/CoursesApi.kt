@@ -1,9 +1,9 @@
-package com.example.test_task.data.remote
+package com.example.test_task.core.data.remote
 
 import retrofit2.http.GET
 
 interface CoursesApi {
 
-    @GET("u/0/uc?id=15arTK7XT2b7Yv4BJsmDctA4Hg-BbS8-q&export=download")
+    @GET(ApiConstants.COURSES_ENDPOINT)
     suspend fun getCourses(): CoursesResponse
 }

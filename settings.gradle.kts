@@ -23,5 +23,11 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "test_task"
+
 include(":app")
+include(":core:domain")
+include(":core:data")
+include(":core:ui")
+include(":feature:auth")
+include(":feature:main")
  

@@ -1,4 +1,4 @@
-package com.example.test_task.data.local
+package com.example.test_task.core.data.local
 
 import androidx.room.Dao
 import androidx.room.Delete

@@ -26,6 +26,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.style.TextOverflow
@@ -105,7 +106,7 @@ fun Course(
                             modifier = Modifier.wrapContentSize()
                         ) {
                             Text(
-                                "Подробнее",
+                                text = stringResource(R.string.main_details),
                                 fontFamily = FontFamily(Font(com.example.test_task.core.ui.R.font.roboto_semibold)),
                                 fontSize = 12.sp,
                                 lineHeight = 15.sp,

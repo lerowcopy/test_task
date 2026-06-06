@@ -1,9 +1,9 @@
-package com.example.test_task.di
+package com.example.test_task.core.data.di
 
 import android.content.Context
 import androidx.room.Room
-import com.example.test_task.data.local.AppDatabase
-import com.example.test_task.data.local.FavoriteCourseDao
+import com.example.test_task.core.data.local.AppDatabase
+import com.example.test_task.core.data.local.FavoriteCourseDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

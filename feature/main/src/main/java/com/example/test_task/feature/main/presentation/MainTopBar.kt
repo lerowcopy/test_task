@@ -24,6 +24,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.example.test_task.feature.main.R
 
@@ -82,7 +83,7 @@ fun TopBar() {
         ) {
             Icon(
                 painter = painterResource(id = R.drawable.ic_filter),
-                contentDescription = "Фильтр",
+                contentDescription = stringResource(R.string.main_filter_content_description),
                 //tint = Color.White,
                 modifier = Modifier.size(24.dp, 24.dp)
             )

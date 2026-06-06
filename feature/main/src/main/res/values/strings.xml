@@ -1,0 +1,12 @@
+<resources>
+    <string name="main_sort_by_publish_date">По дате добавления</string>
+    <string name="main_loading">Загрузка...</string>
+    <string name="main_account_screen">Экран аккаунта</string>
+    <string name="main_empty_favorites">Избранных курсов пока нет</string>
+    <string name="main_error_load_courses">Не удалось загрузить курсы</string>
+    <string name="main_details">Подробнее</string>
+    <string name="main_tab_home">Главная</string>
+    <string name="main_tab_favorites">Избранное</string>
+    <string name="main_tab_account">Аккаунт</string>
+    <string name="main_filter_content_description">Фильтр</string>
+</resources>

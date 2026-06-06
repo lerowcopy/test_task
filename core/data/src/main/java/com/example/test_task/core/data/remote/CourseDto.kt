@@ -1,4 +1,4 @@
-package com.example.test_task.data.remote
+package com.example.test_task.core.data.remote
 
 data class CoursesResponse(
     val courses: List<CourseDto>

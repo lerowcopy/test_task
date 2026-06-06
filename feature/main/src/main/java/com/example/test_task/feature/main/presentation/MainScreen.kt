@@ -29,6 +29,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
@@ -85,7 +86,7 @@ fun MainScreen() {
                         }
                 ) {
                     Text(
-                        "По дате добавления",
+                        text = stringResource(R.string.main_sort_by_publish_date),
                         fontFamily = FontFamily(Font(com.example.test_task.core.ui.R.font.roboto_medium)),
                         fontSize = 14.sp,
                         lineHeight = 20.sp,
@@ -107,7 +108,7 @@ fun MainScreen() {
             when {
                 uiState.isLoading -> {
                     Text(
-                        "Загрузка...",
+                        stringResource(R.string.main_loading),
                         color = Color.White,
                         modifier = Modifier.align(alignment = Alignment.CenterHorizontally)
                     )
@@ -115,7 +116,7 @@ fun MainScreen() {
 
                 uiState.errorMessage != null -> {
                     Text(
-                        uiState.errorMessage!!,
+                        text = stringResource(uiState.errorMessage!!),
                         color = Color.Red,
                         modifier = Modifier.align(alignment = Alignment.CenterHorizontally)
                     )
@@ -129,7 +130,7 @@ fun MainScreen() {
                                 contentAlignment = Alignment.Center
                             ) {
                                 Text(
-                                    text = "Экран аккаунта",
+                                    text = stringResource(R.string.main_account_screen),
                                     color = Color.White
                                 )
                             }
@@ -142,7 +143,7 @@ fun MainScreen() {
                                     contentAlignment = Alignment.Center
                                 ) {
                                     Text(
-                                        text = "Избранных курсов пока нет",
+                                        text = stringResource(R.string.main_empty_favorites),
                                         color = Color.White
                                     )
                                 }

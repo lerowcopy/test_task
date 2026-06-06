@@ -1,0 +1,13 @@
+<resources>
+    <string name="auth_title">Вход</string>
+    <string name="auth_email">Email</string>
+    <string name="auth_email_hint">example@gmail.com</string>
+    <string name="auth_email_error">Введите корректный email</string>
+    <string name="auth_password">Пароль</string>
+    <string name="auth_password_hint">Введите пароль</string>
+    <string name="auth_no_account">Нету аккаунта?</string>
+    <string name="auth_registration"> Регистрация</string>
+    <string name="auth_forgot_password">Забыл пароль</string>
+    <string name="auth_vk">VK</string>
+    <string name="auth_ok">OK</string>
+</resources>
